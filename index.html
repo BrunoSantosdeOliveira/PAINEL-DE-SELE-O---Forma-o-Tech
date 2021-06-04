@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="icon" type="image/png" href="itau-logo.png?v=2" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Painel Itaú</title>
     <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-       
+    <center>   
+         <footer>
+        <img class="itau-logo" src="itau-logo.png" alt="Itaú">
+    </footer></center>
+
 
      <div>
-     <center>
+
      <h1>Cadastro</h1>
-     </center>
+   
      </div>
      <form id="formulario">
              <fieldset id="usuario"><legend> identificaçao do usuario</legend>
-            <p>Nome:<input type="text" name="tNome"id="cNome"placeholder="Nome Completo"/></p> 
-            <p>RG:<input type="text" name="tNome"id="cNome"size="8"maxlength="8"/></p> 
-            <p>CPF:<input type="text" name="tNome"id="cNome"size="11"maxlength="11"/></p> <inout t
+            <p>Nome:<input id="nome" type="text" name="tNome"id="cNome"placeholder="Nome Completo"/></p> 
+            <p>RG:<input  type="text" name="tNome"id="cNome"size="8"maxlength="8"/></p> 
+            <p>CPF:<input id="CPF"type="text" name="tNome"id="cNome"size="11"maxlength="11"/></p> <inout t
             <p> Telefone:<input type="text" name="tNome"id="cNome"placeholder="(DDD)Numero"/></p> </p>
-            <p> Cel:<input type="text" name="tNome"id="cNome"placeholder="(DDD)Numero"/></p> </p>
+            <p> Cel:<input id="celular"type="text" name="tNome"id="cNome"placeholder="(DDD)Numero"/></p> </p>
              Sexo:
              <input type="radio"name="tsexo"id="cmasc"/><label for="cmasc">Masculino</label> 
              <input type="radio"name="tsexo"id="cfem"/><label for="cfem"> Feminino
      </label>
-     <p>Endereço:<label for="c"><input  type="text"name="trua"id="crua"placeholder="Rua"/ ></p></label>
-     <p> Numero:<input type="number"name="tnum"id="cnum"min="0"max="9999"/></p>
+     <p>Endereço:<label for="c"><input id="Endereco"type="text"name="trua"id="crua"placeholder="Rua"/ ></p></label>
+     <p> Numero:<input id="numero"type="number"name="tnum"id="cnum"min="0"max="9999"/></p>
      <p>Bairro:<input type="text" name="tNome"id="cNome"/></p> </p>
      
             <p><label for="ccid"> Cidade:</label><input type ="text"name="tcid"id="ccid" placeholder="Sua Cidade"/></p> 
@@ -36,7 +41,7 @@
             <p>CEP: <input type="text" name="tNome"id="cNome"size="8"maxlength="8"/></p> 
             <form>
              <input type="button"name="bt"value="Enviar"
-             onclick="alert('Formulario enviado')">
+             onclick=onclick="mockSendForm()">
          </form>
              </fieldset>
           <script>

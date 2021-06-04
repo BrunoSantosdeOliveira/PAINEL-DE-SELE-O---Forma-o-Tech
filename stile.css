@@ -6,3 +6,18 @@ body{
 #formulario{
     background-color: cornsilk;
 }
+
+.itau-logo {
+    width: 100px;
+  }
+
+  header {
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px black;
+    user-select: none;
+  }
